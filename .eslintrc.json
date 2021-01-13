@@ -1,0 +1,44 @@
+{
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        // override default options
+        "no-cond-assign": ["error", "always"],
+        "one-var": "off", // ["error", "never"]
+        "init-declarations": "off",
+        "no-console": "error",
+        "no-inline-comments": "off",
+        "curly": ["error", "multi-line"],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "new-cap": 0,
+        "max-params": ["error", 10],
+        "object-curly-spacing": ["error", "always"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "never"],
+        "valid-jsdoc": ["error"],
+        "no-shadow" : "off",
+        "max-len": ["error", {"code": 200, "ignoreStrings": true, "ignoreUrls": true}],
+        "consistent-return" : "off",
+        "no-unused-vars": [0, { "varsIgnorePattern": "^h$" }],
+        "complexity": ["error", 2],
+        "max-statements": ["error", 10],
+        "max-nested-callbacks":["error", 5],
+        "no-invalid-this": 0,
+        "max-depth": [2, 10],
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }]
+    }
+}
